@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <main data-role="page" id="page1" data-theme="b">
+        <header data-role="header" data-position="fixed">
+            <a href="" data-icon="home" class="ui-btn-left">HOME</a>
+            <h2>강아지</h2>
+            <a href="" data-icon="gear" class="ui-btn-right">Setting</a>
+        </header>
+            <nav data-role="navbar">
+                <ul>
+                <li><a href="" data-icon="home">One</a></li>
+                <li><a href="#page2" data-icon="star">Two</a></li>
+                <li><a href="#page3" data-icon="back">Three</a></li>
+                <li><a href="#page4" data-icon="forward">Four</a></li>
+                <li><a href="#page5" data-icon="arrow-1">Five</a></li>
+            </ul>
+            </nav>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li><a href="">메인페이지1</a></li>
+                <li><a href="#page2">강아지리스트</a></li>
+                <li><a href="#page3">서브페이지3</a></li>
+
+            </ul><br><br>
+        
+           
+        </div>
+        </div>
+        <footer data-role="footer" data-position="fixed"><h2>푸터</h2></footer>
+    </main>
+    <main data-role="page" id="page2">
+            <header data-role="header" data-position="fixed">
+                    <a href="#page1" data-icon="home" class="ui-btn-left">HOME</a>
+                    <h2>강아지 리스트</h2>
+                    <a href="#page2" data-icon="back" class="ui-btn-right">back</a>
+                </header>
+       
+        <div data-role="content">
+            <ul data-role="listview">
+                <li><a href="#page1">메인페이지1</a></li>
+                <li><a href="">강아지리스트</a></li>
+                <li><a href="#page3">서브페이지3</a></li>
+            </ul><br><br>
+             
+            <h2>강아지리스트</h2>
+            <ul data-role="listview" data-filter="true" data-inset="true"> 
+                <li data-role="list-divider">강아지 리스트</li> 
+                <li>
+                    <a href="#pg1">
+                        <img src="ci.jpg" alt="랜덤" class="pic">
+                        <h3 class="tit">치와와</h3>
+                        <p class="com">설명1</p>
+                    </a>
+                </li> 
+                <li>
+                        <a href="#pg2">
+                            <img src="coton.jpg" alt="랜덤" class="pic">
+                            <h3 class="tit">꼬동 드 툴레아</h3>
+                            <p class="com">설명2</p>
+                        </a>
+                    </li>  
+                <li>
+                        <a href="#pg3">
+                            <img src="po.jpg" alt="랜덤" class="pic">
+                            <h3 class="tit">포메라니안</h3>
+                            <p class="com">설명2</p>
+                        </a>
+                    </li>  
+                <li>
+                        <a href="#pg4">
+                            <img src="mal.jpg" alt="랜덤" class="pic">
+                            <h3 class="tit">말티즈</h3>
+                            <p class="com">설명2</p>
+                        </a>
+                    </li>  
+                <li>
+                        <a href="#pg4">
+                            <img src="mini.jpg" alt="랜덤" class="pic">
+                            <h3 class="tit">미니핀</h3>
+                            <p class="com">설명2</p>
+                        </a>
+                    </li>      
+                    <li>
+                        
+                                           
+                           
+            </ul><br><br>
+           
+        </div>
+        <footer data-role="footer" data-position="fixed"><h2>푸터</h2></footer>
+    </main>
+
+    <main data-role="page" id="pg1" data-theme="b">
+            <header data-role="header" data-position="fixed">
+                <a href="#page1" data-icon="home" class="ui-btn-left">HOME</a>
+                <h2>치와와정보보기</h2>
+                <a href="#page1" data-icon="forward" class="ui-btn-right">back</a>
+            </header>
+               
+            <div data-role="content">
+                    <img src="ci.jpg">
+                    <p>개들 중에서 가장 작은 품종으로 유명하다. 얼굴형이 예쁘고 크기도 작아서 교배종으로도 인기가 많다.
+                            <br><br>
+                            평균수명 : 12-20년<br>
+                            성격 : 생기있는, 경계심이 많은, 헌신적인, 민첩한, 용맹스러운<br>
+                            털빠짐정도 : 보통<br>
+                            지능순위 67위</p>
+                
+    
+                <br><br>
+            </div>
+            </div>
+            <footer data-role="footer" data-position="fixed"><h2>푸터</h2></footer>
+        </main>
+        <main data-role="page" id="pg2" data-theme="b">
+                <header data-role="header" data-position="fixed">
+                    <a href="#page1" data-icon="home" class="ui-btn-left">HOME</a>
+                    <h2>치와와정보보기</h2>
+                    <a href="#page2" data-icon="forward" class="ui-btn-right">back</a>
+                </header>
+                   
+                <div data-role="content">
+                        <img src="coton.jpg">
+                        <p>마다가스카르산의 개 품종, 이름은 마다가스카르 섬의 남서부에 위치한 항구도시 '토리아라;에서 유래하였다
+                                <br><br>
+                                평균수명 : 14-16년<br>
+                                성격 : 애정이 풍부한, 생기있는, 총명한, 장난스러운, 훈련 능력이 뛰어난, 잘 짖는<br>
+                                털빠짐정도 : 털빠짐 적은 편<br>
+                                지능순위 높은편<br>
+        
+                    <br><br>
+                </div>
+                </div>
+                <footer data-role="footer" data-position="fixed"><h2>푸터</h2></footer>
+            </main>
+            <main data-role="page" id="pg3" data-theme="b">
+                    <header data-role="header" data-position="fixed">
+                        <a href="#page1" data-icon="home" class="ui-btn-left">HOME</a>
+                        <h2>치와와정보보기</h2>
+                        <a href="" data-icon="gear" class="ui-btn-right">Setting</a>
+                    </header>
+                       
+                    <div data-role="content">
+                            <img src="ci.jpg">
+                            <p>개들 중에서 가장 작은 품종으로 유명하다. 얼굴형이 예쁘고 크기도 작아서 교배종으로도 인기가 많다.
+        <br>
+                                    평균수명 : 12-20년<br><br>
+                                    성격 : 생기있는, 경계심이 많은, 헌신적인, 민첩한, 용맹스러운<br>
+                                    털빠짐정도 : 보통<br>
+                                    지능순위 67위</p>
+                        
+            
+                        <br><br>
+                    
+                       
+                    </div>
+                    </div>
+                    <footer data-role="footer" data-position="fixed"><h2>푸터</h2></footer>
+                </main>
+                <main data-role="page" id="pg1" data-theme="b">
+                        <header data-role="header" data-position="fixed">
+                            <a href="#page1" data-icon="home" class="ui-btn-left">HOME</a>
+                            <h2>치와와정보보기</h2>
+                            <a href="" data-icon="gear" class="ui-btn-right">Setting</a>
+                        </header>
+                           
+                        <div data-role="content">
+                                <img src="ci.jpg">
+                                <p>개들 중에서 가장 작은 품종으로 유명하다. 얼굴형이 예쁘고 크기도 작아서 교배종으로도 인기가 많다.
+            <br>
+                                        평균수명 : 12-20년<br><br>
+                                        성격 : 생기있는, 경계심이 많은, 헌신적인, 민첩한, 용맹스러운<br>
+                                        털빠짐정도 : 보통<br>
+                                        지능순위 67위</p>
+                            
+                
+                            <br><br>
+                        
+                           
+                        </div>
+                        </div>
+                        <footer data-role="footer" data-position="fixed"><h2>푸터</h2></footer>
+                    </main>
+
+    <main data-role="page" id="page3" data-theme="c">
+        <header data-role="header" data-position="fixed"><h2>서브3</h2></header>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li><a href="#page1">메인페이지1</a></li>
+                <li><a href="#page2">강아지리스트</a></li>
+                <li><a href="">서브페이지3</a></li>
+            </ul>
+        </div>
+        <footer data-role="footer" data-position="fixed"><h2>푸터</h2></footer>
+    </main>
+</body>
+</html>
